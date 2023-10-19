@@ -5,8 +5,7 @@ function Navbar() {
   return (
     <div className="Navbar">
         <ul>
-            <Link to={'/'}>Home</Link>
-            <Link to={'/about'}>Marketplace</Link>
+            <Link to={'/'}>Marketplace</Link>
             <Link to={'/about'}>Rankings</Link>
             <Link to={'/contact'}>Connect a wallet</Link>
         </ul>

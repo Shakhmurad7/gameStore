@@ -2,19 +2,26 @@ body{
     background-color:#2B2B2B;
 }
 *{
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 
 /* ---header--- */
 .Header-container{
+
+    align-items: center;
     display: flex;
     justify-content: space-between;
     color: white;
-    padding: 20px 30px;
+    padding: 20px 40px;
 }
 .header-left{
+    font-weight: 700;
     align-items: center;
     display: flex;
     gap: 10px;
@@ -22,6 +29,21 @@ body{
 .header-left img{
     width: 50px;
     height: 50px;
+}
+.header-right{
+    align-items: center;
+    display: flex;
+    gap: 60px;
+}
+.sing-up{
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    background-color: #A259FF;
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
 }
 
 /* 
@@ -31,7 +53,8 @@ body{
     gap: 30px;
 }
 .Navbar ul a{
+    font-weight: 700;
     font-size: 20px;
-    color: white;
+    color: white ; 
     text-decoration: none;
 }

@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import Navbar from "./navbar"
+import { AiOutlineUser } from "react-icons/ai";
 
 function Header() {
   return (
@@ -9,10 +11,12 @@ function Header() {
       </div>
       <div className="header-right">
         <Navbar/>
+            <Link to={'/contact'}>
           <div className="sing-up">
-            <p>Sign Up</p>
-            <i className="fa-solid fa-user"></i>
+              <AiOutlineUser/>
+              <p>Sign Up</p>
           </div>
+            </Link>
       </div>
    </div> 
   )
