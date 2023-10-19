@@ -1,0 +1,37 @@
+body{
+    background-color:#2B2B2B;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---header--- */
+.Header-container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 30px;
+}
+.header-left{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.header-left img{
+    width: 50px;
+    height: 50px;
+}
+
+/* 
+----NavBar--- */
+.Navbar ul{
+    display: flex;
+    gap: 30px;
+}
+.Navbar ul a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}

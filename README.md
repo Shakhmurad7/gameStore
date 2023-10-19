@@ -1,5 +1,8 @@
 # React + TypeScript + Vite
 
+Figma-https://www.figma.com/file/pYLezccGqjYxg8djRax2y7/NFT-Marketplace?type=design&node-id=1647-17907&mode=design&t=a3GQhiQcfQTlQ6pC-0
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
