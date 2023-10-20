@@ -6,7 +6,7 @@ function Header() {
   return (
    <div className="Header-container">
       <div className="header-left">
-        <img src={'./Storefront.svg'} />
+        <img src={'./img/Storefront.svg'} />
         <h2>NFT Marketplace</h2>
       </div>
       <div className="header-right">
