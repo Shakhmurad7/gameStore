@@ -55,3 +55,54 @@
     align-items: center;
     margin-top: 10px;
 }
+
+
+
+
+/* -----section-container----- */
+.section-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 150px;
+    color: white;
+    gap: 50px;
+}
+.section-top-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section-top-text h2{
+    font-size: 2.2rem;
+}
+.section-img-block{
+    width: 100%;
+    max-width: 320px;
+}
+.setion-img-row img{
+    width: 100%;
+}
+.setion-img-row {
+    gap: 10px;
+    display: flex;
+}
+.setion-img-row{
+    margin-top: 10px;
+    width: 100%;
+}
+.section-text-row{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section-img-text-row{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.section-img-text-row img{
+    width: 100%;
+    max-width: 30px;
+    border-radius: 50%;
+}

@@ -38,6 +38,30 @@ function Home() {
             </div>
           </div>
         </div>
+
+        <div className={style['section-container']}>
+          <div className={style['section-top-text']}>
+            <h2>Trending Collection</h2>
+            <p>Checkout our weekly updated trending collection.</p>
+          </div>
+          <div className={style['section-img']}>
+            <div className={style['section-img-block']}>
+              <img src={'./img/Primary Photo Placeholder.png'} />
+              <div className={style['setion-img-row']}>
+                <img src={'./img/Secondary Photo Placeholder (1).svg'} />
+                <img src={'./img/Secondary Photo Placeholder.svg'} />
+                <img src={'./img/Number of additional NFTs.svg'} />
+              </div>
+              <div className={style['section-text-row']}>
+                <h2>DSGN Animals</h2>
+                <div className={style['section-img-text-row']}>
+                  <img src={'./img/Secondary Photo Placeholder (1).svg'} />
+                  <p>MrFox</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </PageContainer>
   )
 }
