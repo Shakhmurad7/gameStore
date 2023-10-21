@@ -10,7 +10,19 @@
     flex-direction: column;
     gap: 10px;
 }
+.hero-icon{
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 15px 40px;
+    background-color: #A259FF;
+    border-radius: 20px;
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    align-items: center;
+}
 .hero-left h1{
+    font-weight: 700;
     font-size: 4.5rem;
 }
 .hero-left{
@@ -22,8 +34,24 @@
     justify-content: space-between;
     align-items: center;
 }
+.hero-block h2{
+    font-weight: 700;
+}
 .hero-block{
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+.hero-right-block{
+    margin-top: -10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color:#3B3B3B;
+    padding: 20px;
+}
+.hero-right-block-row{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
 }
