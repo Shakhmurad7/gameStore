@@ -67,6 +67,14 @@
     color: white;
     gap: 50px;
 }
+.section-top-text p{
+    font-size: 24px;
+}
+.section-img{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
 .section-top-text{
     display: flex;
     flex-direction: column;

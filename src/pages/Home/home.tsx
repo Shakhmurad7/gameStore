@@ -45,6 +45,7 @@ function Home() {
             <p>Checkout our weekly updated trending collection.</p>
           </div>
           <div className={style['section-img']}>
+
             <div className={style['section-img-block']}>
               <img src={'./img/Primary Photo Placeholder.png'} />
               <div className={style['setion-img-row']}>
@@ -60,6 +61,39 @@ function Home() {
                 </div>
               </div>
             </div>
+
+            <div className={style['section-img-block']}>
+              <img src={'./img/Primary Photo Placeholder (1).png'} />
+              <div className={style['setion-img-row']}>
+                <img src={'./img/Secondary Photo Placeholder (2).svg'} />
+                <img src={'./img/Secondary Photo Placeholder (3).svg'} />
+                <img src={'./img/Number of additional NFTs.svg'} />
+              </div>
+              <div className={style['section-text-row']}>
+                <h2>DSGN Animals</h2>
+                <div className={style['section-img-text-row']}>
+                  <img src={'./img/Secondary Photo Placeholder (1).svg'} />
+                  <p>MrFox</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={style['section-img-block']}>
+              <img src={'./img/Primary Photo Placeholder (2).png'} />
+              <div className={style['setion-img-row']}>
+                <img src={'./img/Secondary Photo Placeholder (4).svg'} />
+                <img src={'./img/Secondary Photo Placeholder (5).svg'} />
+                <img src={'./img/Number of additional NFTs.svg'} />
+              </div>
+              <div className={style['section-text-row']}>
+                <h2>DSGN Animals</h2>
+                <div className={style['section-img-text-row']}>
+                  <img src={'./img/Secondary Photo Placeholder (1).svg'} />
+                  <p>MrFox</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
     </PageContainer>
