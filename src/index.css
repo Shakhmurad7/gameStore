@@ -60,21 +60,37 @@ a{
 }
 
 /* ---footer---- */
-.footer-contaiiner{
+.footer-big-container{
     background-color:#3B3B3B;
-    align-items: flex-start;
     padding: 50px 100px;
     color: white;
+}
+.footer-contaiiner{
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
 }
 .footer-left p , .footer-center p , .footer-right p{
     opacity: 0.7;
 }
+.footer-center a{
+    opacity: 0.7;
+    color:white;
+}
+.footer-right h2{
+    letter-spacing: 2px;
+}
 .footer-left{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.footer-left-icon img{
+    cursor: pointer;
+}
+.footer-left-icon{
+    display: flex;
+    gap: 10px;
 }
 .footer-left-block-top{
     display: flex;
@@ -90,4 +106,37 @@ a{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.footer-input{
+    display: flex;
+}
+.footer-input input{
+    padding:20px 60px 20px 30px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.footer-input button{
+    padding: 20px  30px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.footer-input button{
+    cursor: pointer;
+    position: relative;
+    left: -50px;
+    background-color:#A259FF;
+    color: white;
+}
+.footer-right p{
+    width: 100%;
+    max-width: 270px;
+}
+/* ----footer-end----- */
+.footer-end{
+    color:#CCCCCC;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top:1px solid#858584;
 }
