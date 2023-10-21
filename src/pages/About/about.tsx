@@ -1,4 +1,4 @@
-import PageContainer from "../companents/pageContainer"
+import PageContainer from "../../companents/pageContainer"
 
 function About() {
   return (
