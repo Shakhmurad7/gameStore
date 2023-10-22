@@ -24,8 +24,9 @@ function CartImg() {
         {
             data.slice(0,4).map(({id , img , icon , item}:dataname)=>(
                 <div key={id}  className={style['content-block']}>
-                    <img src={`./img/${img}.png`} />
+                    <img className={style['section-image']} src={`./img/${img}.png`} />
                     <h2>{item}</h2>
+                    <img className={style['icon-img']} src={`./img/${icon}.svg`}  />
                 </div>
             ))
             
@@ -36,8 +37,9 @@ function CartImg() {
 {
     data.slice(4,8).map(({id , img , icon , item}:dataname)=>(
         <div key={id}  className={style['content-block']}>
-            <img src={`./img/${img}.png`} />
+            <img className={style['section-image']} src={`./img/${img}.png`} />
             <h2>{item}</h2>
+            <img className={style['icon-img']} src={`./img/${icon}.svg`}  />
         </div>
     ))
     

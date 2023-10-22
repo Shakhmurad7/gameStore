@@ -232,15 +232,25 @@
 .section-home-cart{
     padding: 50px 150px;
 }
-.content-block img:hover{
+.content-block:hover .icon-img{
+    bottom: 40px;
+    height: auto;
+    opacity: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.content-block:hover .section-image{
     filter: blur(0);
 }
-.content-block img{
+.section-image{
     transition: .3s;
     filter: blur(4px);
     width: 100%;
 }
 .content-block{
+    cursor: pointer;
+    transition: .7s;
+    position: relative;
     background-color: #3B3B3B;
     width: 100%;
     min-width: 150px;
@@ -249,4 +259,11 @@
 }
 .content-block h2{
     padding: 10px 10px 20px 10px;
+}
+.icon-img{
+    bottom: 120px;
+    height: auto;
+    left: 30%;
+    width: 100px !important;
+    position: absolute;
 }
