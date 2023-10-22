@@ -57,7 +57,7 @@ function Home() {
               <div className={style['section-text-row']}>
                 <h2>DSGN Animals</h2>
                 <div className={style['section-img-text-row']}>
-                  <img src={'./img/Secondary Photo Placeholder (1).svg'} />
+                  <img style={{transform:"none"}} src={'./img/Secondary Photo Placeholder (1).svg'} />
                   <p>MrFox</p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ function Home() {
               <div className={style['section-text-row']}>
                 <h2>DSGN Animals</h2>
                 <div className={style['section-img-text-row']}>
-                  <img src={'./img/Secondary Photo Placeholder (1).svg'} />
+                  <img style={{transform:"none"}} src={'./img/Secondary Photo Placeholder (1).svg'} />
                   <p>MrFox</p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ function Home() {
               <div className={style['section-text-row']}>
                 <h2>DSGN Animals</h2>
                 <div className={style['section-img-text-row']}>
-                  <img src={'./img/Secondary Photo Placeholder (1).svg'} />
+                  <img  style={{transform:"none"}}src={'./img/Secondary Photo Placeholder (1).svg'} />
                   <p>MrFox</p>
                 </div>
               </div>
@@ -99,6 +99,16 @@ function Home() {
         </div>
 
 <div className={style['cart-container']}>
+  <div className={style['section-cart-top-text']}>
+    <div className={style['section-text-left']}>
+      <h2>Top creators</h2>
+      <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+    </div>
+    <div className={style['section-text-right']}>
+      <BsRocketTakeoffFill/>
+      <p>View Rankings</p>
+    </div>
+  </div>
         <Carthome/>
 </div>
     </PageContainer>

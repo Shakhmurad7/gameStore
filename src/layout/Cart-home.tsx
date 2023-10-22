@@ -7,10 +7,7 @@ function Carthome() {
     const [data , setdata] = useState<any>([])
     useEffect(()=>{
         axios.get(url).then(({data})=>{
-           setdata(data)
-           console.log(data);
-           
-           
+           setdata(data)           
         })
     } , [])
   return (
@@ -19,8 +16,8 @@ function Carthome() {
 
 <div className={style['cart-content']}>
     {
-        data.slice(0,4).map(({id , itme , title , img , date }:any)=> (  
-            <>
+        data.slice(0,4).map(({id , itme , title , img , date }:any) => (  
+  
             <div key={id} className={style['cart']}>
                     <h2>{id}</h2>
                     <img src={`./img/${img}.svg`} />
@@ -30,8 +27,7 @@ function Carthome() {
                     <p>{date}</p>
                 </div>
             </div>  
-            </>
-            
+
             ))
         }
     </div>
@@ -39,7 +35,7 @@ function Carthome() {
     <div className={style['cart-content']}>
     {
         data.slice(4,8).map(({id , itme , title , img , date }:any)=> (  
-            <>
+          
             <div key={id} className={style['cart']}>
                     <h2>{id}</h2>
                     <img src={`./img/${img}.svg`} />
@@ -49,7 +45,7 @@ function Carthome() {
                     <p>{date}</p>
                 </div>
             </div>  
-            </>
+        
             
             ))
         }
@@ -58,7 +54,7 @@ function Carthome() {
     <div className={style['cart-content']}>
     {
         data.slice(8,12).map(({id , itme , title , img , date }:any)=> (  
-            <>
+            
             <div key={id} className={style['cart']}>
                     <h2>{id}</h2>
                     <img src={`./img/${img}.svg`} />
@@ -68,7 +64,7 @@ function Carthome() {
                     <p>{date}</p>
                 </div>
             </div>  
-            </>
+            
             
             ))
         }
