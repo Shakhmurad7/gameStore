@@ -63,9 +63,14 @@
 .section-container{
     display: flex;
     flex-direction: column;
-    padding: 40px 150px;
+    padding: 80px 150px;
     color: white;
     gap: 50px;
+}
+.cart-cntent-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .section-top-text p{
     font-size: 24px;
@@ -83,7 +88,15 @@
 .section-top-text h2{
     font-size: 2.2rem;
 }
+.section-img-block img{
+    transition: .4s;
+    width: 100%;
+}
+.section-img-block img:hover{
+   transform: translateY(-10px);
+}
 .section-img-block{
+    cursor: pointer;
     width: 100%;
     max-width: 320px;
 }
@@ -117,14 +130,20 @@
 
 /* -----card----- */
 .cart-container{
-    padding: 40px 150px;
+    padding: 100px 150px;
+}
+.cart:hover{
+    transform: translateY(-10px);
+    background-color: #2B2B2B;
 }
 .cart{
+    cursor: pointer;
+    transition: .5s;
     position: relative;
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
     text-align: center;
-    padding:20px 30px 40px 30px; 
+    padding:20px 40px 40px 40px; 
     background-color: #3B3B3B;
 }
 .cart-content{
