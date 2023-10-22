@@ -4,6 +4,13 @@ import style from '../pages/Home/index.module.css'
 
 const url = 'https://book-db-shakhmurad.vercel.app/NFT-post-cart'
 function Carthome() {
+    type dataname = { 
+        id:number,
+        title:string,
+        img:string,
+        itme:string,
+        date:string
+    }
     const [data , setdata] = useState<any>([])
     useEffect(()=>{
         axios.get(url).then(({data})=>{
@@ -16,7 +23,7 @@ function Carthome() {
 
 <div className={style['cart-content']}>
     {
-        data.slice(0,4).map(({id , itme , title , img , date }:any) => (  
+        data.slice(0,4).map(({id , itme , title , img , date }:dataname) => (  
   
             <div key={id} className={style['cart']}>
                     <h2>{id}</h2>

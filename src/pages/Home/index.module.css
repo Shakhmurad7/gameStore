@@ -214,3 +214,39 @@
     padding: 15px 40px;
 
 }
+
+
+
+/* -----section-cart-2--- */
+.content-big-container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.container-content-block{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.section-home-cart{
+    padding: 50px 150px;
+}
+.content-block img:hover{
+    filter: blur(0);
+}
+.content-block img{
+    transition: .3s;
+    filter: blur(4px);
+    width: 100%;
+}
+.content-block{
+    background-color: #3B3B3B;
+    width: 100%;
+    min-width: 150px;
+    max-width: 250px;
+    border-radius: 20px;
+}
+.content-block h2{
+    padding: 10px 10px 20px 10px;
+}

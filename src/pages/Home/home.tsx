@@ -1,5 +1,6 @@
 import PageContainer from "../../companents/pageContainer"
 import Carthome from "../../layout/Cart-home";
+import CartImg from "../../layout/CartImg";
 import style from "./index.module.css"
 import {BsRocketTakeoffFill} from "react-icons/bs";
 function Home() {
@@ -110,6 +111,10 @@ function Home() {
     </div>
   </div>
         <Carthome/>
+</div>
+
+<div className={style['section-home-cart']}>
+  <CartImg/>
 </div>
     </PageContainer>
   )
