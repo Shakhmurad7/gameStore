@@ -1,5 +1,6 @@
 import PageContainer from "../../companents/pageContainer"
 import Carthome from "../../layout/Cart-home";
+import CartBlock from "../../layout/CartBlock";
 import CartImg from "../../layout/CartImg";
 import style from "./index.module.css"
 import {BsRocketTakeoffFill} from "react-icons/bs";
@@ -129,6 +130,7 @@ function Home() {
       <p>See All</p>
     </div>
   </div>
+    <CartBlock/>
    
 </div>
 
