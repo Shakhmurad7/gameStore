@@ -3,6 +3,7 @@ import Carthome from "../../layout/Cart-home";
 import CartImg from "../../layout/CartImg";
 import style from "./index.module.css"
 import {BsRocketTakeoffFill} from "react-icons/bs";
+import {IoMdEye} from "react-icons/io";
 function Home() {
   return (
     <PageContainer>
@@ -116,6 +117,21 @@ function Home() {
 <div className={style['section-home-cart']}>
   <CartImg/>
 </div>
+
+<div className={style['cart-container']}>
+  <div className={style['section-cart-top-text']}>
+    <div className={style['section-text-left']}>
+      <h2>Discover More NFTs</h2>
+      <p>Explore new trending NFTs</p>
+    </div>
+    <div className={style['section-text-right']}>
+      <IoMdEye/>
+      <p>See All</p>
+    </div>
+  </div>
+   
+</div>
+
     </PageContainer>
   )
 }
