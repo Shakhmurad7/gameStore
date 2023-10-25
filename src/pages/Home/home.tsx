@@ -134,6 +134,54 @@ function Home() {
    
 </div>
 
+<div className={style['aside']}>
+  <div className={style['aside-left']}>
+    <h1>Magic Mashrooms</h1>
+    <div className={style['aside-button']}>
+      <IoMdEye/>
+      <p>See All</p>
+    </div>
+  </div>
+  <div className={style['aside-right']}>
+          <h3>Auction ends in:</h3>
+      <div className={style['aside-date']}>
+
+        <div className={style['aside-page-date']}>
+          <h2>2</h2>
+          <h4>day</h4>
+        </div>
+
+          <div className={style['aside-item']}>
+            <h2>:</h2>
+          </div>
+
+        <div className={style['aside-page-date']}>
+          <h2>13</h2>
+          <h4>Hours</h4>
+        </div>
+        
+        <div className={style['aside-item']}>
+            <h2>:</h2>
+          </div>
+
+        <div className={style['aside-page-date']}>
+          <h2>39</h2>
+          <h4>Minutes</h4>
+        </div>
+
+        <div className={style['aside-item']}>
+            <h2>:</h2>
+          </div>
+
+        <div className={style['aside-page-date']}>
+          <h2>21</h2>
+          <h4>seconds</h4>
+        </div>
+
+      </div>
+  </div>
+</div>
+
     </PageContainer>
   )
 }
