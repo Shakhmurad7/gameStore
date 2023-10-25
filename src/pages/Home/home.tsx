@@ -6,6 +6,7 @@ import style from "./index.module.css"
 import {BsRocketTakeoffFill} from "react-icons/bs";
 import {IoMdEye} from "react-icons/io";
 import Data from "../../layout/date";
+import Carthome3 from "../../layout/Carthome3";
 function Home() {
   return (
     <PageContainer>
@@ -116,10 +117,12 @@ function Home() {
         <Carthome/>
 </div>
 
+{/* -----cart-block-item---- */}
 <div className={style['section-home-cart']}>
   <CartImg/>
 </div>
 
+{/* -----cart-2----- */}
 <div className={style['cart-container']}>
   <div className={style['section-cart-top-text']}>
     <div className={style['section-text-left']}>
@@ -132,10 +135,16 @@ function Home() {
     </div>
   </div>
     <CartBlock/>
-   
 </div>
+{/* ----Date---- */}
 
 <Data/>
+
+{/* ----Cart-3----- */}
+<div className={style['cart-big-container-3']}>
+  <Carthome3/>
+</div>
+
     </PageContainer>
   )
 }
