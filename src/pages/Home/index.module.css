@@ -410,3 +410,37 @@
 .cart-big-container-3{
     padding: 40px 150px;
 }
+.cart-container-big-3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1900px;
+    gap: 30px;
+}
+.cart-container-3 img{
+    max-width: 250px;
+    width: 100%;
+}
+.cart-container-3{
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+    background-color:#3B3B3B;
+}
+
+
+/* ----messaje----- */
+.container-messaje{
+    margin: 50px 150px;
+    color: white;
+    background-color: #3B3B3B;
+    display: flex;
+    gap: 60px;
+    border-radius: 20px;
+    padding: 40px;
+}

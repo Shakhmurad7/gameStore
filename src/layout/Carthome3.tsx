@@ -11,13 +11,13 @@ function Carthome3() {
         })
     } , [])
   return (
-    <div className="">
+    <div className={style['cart-container-big-3']}>
         {
             data.map(({id , img , text , item})=>(
                 <div key={id} className={style['cart-container-3']}>
                     <img src={`./img/${img}.png`} />
-                    <h3>{text}</h3>
                     <h2>{item}</h2>
+                    <p>{text}</p>
                 </div>
             ))
         }

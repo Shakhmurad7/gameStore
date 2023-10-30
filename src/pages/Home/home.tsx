@@ -7,6 +7,7 @@ import {BsRocketTakeoffFill} from "react-icons/bs";
 import {IoMdEye} from "react-icons/io";
 import Data from "../../layout/date";
 import Carthome3 from "../../layout/Carthome3";
+import {AiOutlineMail} from "react-icons/ai";
 function Home() {
   return (
     <PageContainer>
@@ -143,6 +144,21 @@ function Home() {
 {/* ----Cart-3----- */}
 <div className={style['cart-big-container-3']}>
   <Carthome3/>
+</div>
+
+<div className={style['container-messaje']}>
+    <img src={'./img/Photo (1).png'} />
+    <div className={style['container-messaje-block']}>
+      <h1>Join our weekly digest</h1>
+      <p>Get exclusive promotions & updates straight to your inbox.</p>
+      <div className={style['messaje-row']}>
+        <input type="text" placeholder="Enter your email here" />
+        <div className={style['messaje-icon']}>
+          <AiOutlineMail/>
+          <p>Subscribe</p>
+        </div>
+      </div>
+    </div>
 </div>
 
     </PageContainer>
