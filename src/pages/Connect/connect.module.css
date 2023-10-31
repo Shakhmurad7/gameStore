@@ -1,0 +1,72 @@
+.container{
+    background-image: url('./img/Image PlaceHolder (12).png');
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.connect-contaner{
+    display: flex;
+    justify-content: space-between;
+    margin: -60px 150px 40px 150px;
+    color: white;
+    align-items: center;
+}
+.connect-img{
+    width: 120px;
+    height: 120px;
+}
+.connect-page-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.connect-block-row{
+    display: flex;
+    gap: 40px;
+}
+.connect-page-left{
+    margin-top: -100px;
+    gap: 20px;
+    display: flex;
+}
+.connect-block-1-left{
+    cursor: pointer;
+    padding: 15px 30px;
+    background-color:
+    #A259FF;
+    gap: 10px;
+    display: flex;
+    border-radius: 20px ;
+}
+.connect-block-2-left{
+    cursor: pointer;
+    transition: .4s;
+    border-radius: 20px ;
+    padding: 15px 30px;
+    gap: 10px;
+    display: flex;
+    border: 1px solid #A259FF;
+
+}
+.connect-page-center h2 , .connect-icon-text h2{
+    color: #858584;
+}
+.connect-page-center{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.connect-icon{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+.connect-block{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.connect-block-2-left:hover{
+    background-color: #A259FF;
+}
