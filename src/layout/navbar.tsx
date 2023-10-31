@@ -7,7 +7,7 @@ function Navbar() {
         <ul>
             <Link to={'/'}>Marketplace</Link>
             <Link to={'/about'}>Rankings</Link>
-            <Link to={'/contact'}>Connect a wallet</Link>
+            <Link to={'/connect'}>Connect a wallet</Link>
         </ul>
     </div>
   )
