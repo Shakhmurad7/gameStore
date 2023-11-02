@@ -50,7 +50,7 @@ function Connect() {
                         <BiCopy/>
                         <p>0xc0E3...B79C</p>
                     </div>
-                    <div className={style['a']}>
+                    <div className={style['connect-block-2-left']}>
                         <AiOutlinePlus/>
                         <p>Follow</p>
                     </div>

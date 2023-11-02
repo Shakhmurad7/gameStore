@@ -274,12 +274,14 @@
 
 /* -----section-CartBlock----- */
 .section-cart-block{
+  padding: 0px 150px;
   display: flex;
   gap: 30px;
   justify-content: space-between;
 }
 .section-cartblock-col{
-  padding: 50px 150px;
+  background-color:#3B3B3B;
+  padding: 50px 0;
   width: 100%;
   max-width: 1900px;
   color: white;

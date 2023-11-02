@@ -70,3 +70,45 @@
 .connect-block-2-left:hover{
     background-color: #A259FF;
 }
+
+
+.cart-block-page:hover {
+    transform: translateY(-10px);
+  }
+  .cart-block-page img {
+    width: 100%;
+  }
+  .cart-block-page {
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: 
+    #2B2B2B;
+    border-radius: 20px;
+    width: 100%;
+    width: 300px;
+  }
+
+
+.filtir-page h2{
+    cursor: pointer;
+}
+.filter-container{
+    padding: 0 150px ;
+    color: white;
+    border-top: 1px solid 
+    #3B3B3B;
+}
+.filtir-page{
+    margin: 20px 0;
+    display: flex;
+    gap: 40px ;
+    justify-content: space-between;
+    padding: 0px 150px;
+}
+.filtir-page-h2{
+    text-align: center;
+    width: 40%;
+    margin-bottom: -20px;
+    padding-bottom:15px;
+    border-bottom: 2px solid ;
+}
