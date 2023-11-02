@@ -18,13 +18,15 @@ function FilterdataConnect() {
             item:string,
             name:string
             price:string
-            HighestBid:string
+            HighestBid:string   
             img:string
+            cotegory:string
         }
 
     const tab =(i:string)=>{
         setflter(i)
     }
+
     const filterdata = data.filter((item:any)=>{
         if(flter === 'all'){
             return data
@@ -33,14 +35,26 @@ function FilterdataConnect() {
           return item.cotegory === flter
         }
     
-    })
+    }) 
+
+const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').length;
+const collectionCount = data.filter((item: dataname) => item.cotegory === 'collection').length;
   return (
       <>
 <div className={styles['filter-container']}>
         <div className={styles['filtir-page']}>
-            <h2 className={ flter==='all'? styles['filtir-page-h2'] : styles['']}  onClick={()=>tab('all')}  >Created</h2>
-            <h2 className={ flter==='owned'? styles['filtir-page-h2'] : styles['']} onClick={()=>tab('owned')} >owned</h2>
-            <h2 className={ flter==='collection'? styles['filtir-page-h2'] : styles['']} onClick={()=>tab('collection')} >Collection</h2>
+            <div className={ flter==='all'? styles['filtir-page-h2'] : styles['filtir-page-h2-none']}  onClick={()=>tab('all')} >
+                <h2>Created</h2>
+                <p>{data.length}</p>
+            </div>
+            <div className={ flter==='owned'? styles['filtir-page-h2'] : styles['filtir-page-h2-none']}  onClick={()=>tab('owned')} >
+                <h2>Created</h2>
+                <p>{ownedCount}</p>
+            </div>
+            <div className={ flter==='collection'? styles['filtir-page-h2'] : styles['filtir-page-h2-none']}  onClick={()=>tab('collection')} >
+                <h2>Created</h2>
+                <p>{collectionCount}</p>
+            </div>
         </div>
 </div>
 
@@ -131,3 +145,5 @@ function FilterdataConnect() {
 }
 
 export default FilterdataConnect
+
+

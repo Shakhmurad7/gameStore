@@ -276,8 +276,8 @@
 .section-cart-block{
   padding: 0px 150px;
   display: flex;
-  gap: 30px;
-  justify-content: space-between;
+  gap: 70px;
+
 }
 .section-cartblock-col{
   background-color:#3B3B3B;
