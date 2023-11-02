@@ -2,6 +2,7 @@ import PageContainer from '../../companents/pageContainer'
 import style from './connect.module.css'
 import {BiCopy} from "react-icons/bi";
 import {AiOutlinePlus} from "react-icons/ai";
+import FilterdataConnect from '../../layout/FilterdataConnect';
 
 function Connect() {
   return (
@@ -49,12 +50,14 @@ function Connect() {
                         <BiCopy/>
                         <p>0xc0E3...B79C</p>
                     </div>
-                    <div className={style['connect-block-2-left']}>
+                    <div className={style['a']}>
                         <AiOutlinePlus/>
                         <p>Follow</p>
                     </div>
                 </div>
         </div>
+
+            <FilterdataConnect/>
     </PageContainer>
   )
 }

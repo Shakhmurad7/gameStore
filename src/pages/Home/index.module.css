@@ -273,6 +273,21 @@
 }
 
 /* -----section-CartBlock----- */
+.section-cart-block{
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.section-cartblock-col{
+  padding: 50px 150px;
+  width: 100%;
+  max-width: 1900px;
+  color: white;
+  justify-content:center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 .section-cartblock {
   width: 100%;
   max-width: 1900px;

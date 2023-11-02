@@ -32,7 +32,7 @@ function CartBlock() {
 
     return (
         <div className={style['section-cartblock']}>
-            {data.map(({ id, item, price, HighestBid, img, name }: DataItem) => (
+            {data.slice(0,3).map(({ id, item, price, HighestBid, img, name }: DataItem) => (
                 <div key={id} className={style['cart-block-page']}>
                     <img src={`/img/${img}.png`} alt={name} />
                     <div className={style['cart-min-block']}>
