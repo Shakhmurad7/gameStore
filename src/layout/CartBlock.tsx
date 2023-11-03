@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import style from '../pages/Home/index.module.css';
+import { Link } from "react-router-dom";
 
 function CartBlock() {
     const url = 'https://book-db-shakhmurad.vercel.app/NFT-post-cartBlock';
@@ -33,6 +34,7 @@ function CartBlock() {
     return (
         <div className={style['section-cartblock']}>
             {data.slice(0,3).map(({ id, item, price, HighestBid, img, name }: DataItem) => (
+                  <Link to={`/connect`}>
                 <div key={id} className={style['cart-block-page']}>
                     <img src={`/img/${img}.png`} alt={name} />
                     <div className={style['cart-min-block']}>
@@ -53,6 +55,7 @@ function CartBlock() {
                         </div>
                     </div>
                 </div>
+            </Link>
             ))}
         </div>
     );

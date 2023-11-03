@@ -8,6 +8,7 @@ import {IoMdEye} from "react-icons/io";
 import Data from "../../layout/date";
 import Carthome3 from "../../layout/Carthome3";
 import {AiOutlineMail} from "react-icons/ai";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <PageContainer>
@@ -130,10 +131,12 @@ function Home() {
       <h2>Discover More NFTs</h2>
       <p>Explore new trending NFTs</p>
     </div>
-    <div className={style['section-text-right']}>
-      <IoMdEye/>
-      <p>See All</p>
-    </div>
+      <Link to={'/connect'}>
+            <div className={style['section-text-right']}>
+                <IoMdEye/>
+                <p>See All</p>
+            </div>
+        </Link>
   </div>
     <CartBlock/>
 </div>
