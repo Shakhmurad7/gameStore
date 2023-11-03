@@ -10,17 +10,17 @@ function Footer() {
      <div className="footer-left">
 
       <div className="footer-left-block-top">
-        <img src={'./img/Storefront.svg'} />
+        <img src={'../img/Storefront.svg'} />
         <h2>NFT Marketplace</h2>
       </div>
       <p>NFT marketplace UI created with Anima for Figma.</p>
       <p>Join our community</p>
 
       <div className="footer-left-icon">
-        <img src={'./img-icon/DiscordLogo.svg'}/>
-        <img src={'./img-icon/InstagramLogo.svg'} />
-        <img src={'./img-icon/TwitterLogo.svg'} />
-        <img src={'./img-icon/YoutubeLogo.svg'} />
+        <img src={'../img-icon/DiscordLogo.svg'}/>
+        <img src={'../img-icon/InstagramLogo.svg'} />
+        <img src={'../img-icon/TwitterLogo.svg'} />
+        <img src={'../img-icon/YoutubeLogo.svg'} />
       </div>
 
      </div>

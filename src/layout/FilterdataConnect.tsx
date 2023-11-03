@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import style from '../pages/Home/index.module.css';
 import styles from '../pages/Connect/connect.module.css'
+import { Link } from "react-router-dom";
 
 const url = 'https://book-db-shakhmurad.vercel.app/NFT-post-cartBlock';
 function FilterdataConnect() {
@@ -63,6 +64,7 @@ const collectionCount = data.filter((item: dataname) => item.cotegory === 'colle
 
             {
                 filterdata.slice(0,3).map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                    <Link to={`/connect/${id}`}>
                     <div key={id} className={styles['cart-block-page']}>
                 <img src={`/img/${img}.png`} alt={name} />
                 <div className={style['cart-min-block']}>
@@ -83,6 +85,7 @@ const collectionCount = data.filter((item: dataname) => item.cotegory === 'colle
                     </div>
                 </div>
             </div>
+                </Link>
             ))
         }
         </div>
@@ -90,6 +93,7 @@ const collectionCount = data.filter((item: dataname) => item.cotegory === 'colle
         <div className={ style['section-cart-block']}>
                {
             filterdata.slice(3,6).map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                <Link to={`/connect/${id}`}>
                 <div key={id} className={styles['cart-block-page']}>
                 <img src={`/img/${img}.png`} alt={name} />
                 <div className={style['cart-min-block']}>
@@ -110,12 +114,14 @@ const collectionCount = data.filter((item: dataname) => item.cotegory === 'colle
                     </div>
                 </div>
             </div>
+            </Link>
             ))
             }
             </div>
             <div className={ style['section-cart-block']}>
                {
-            filterdata.slice(6,9).map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                   filterdata.slice(6,9).map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                <Link to={`/connect/${id}`}>
                 <div key={id} className={styles['cart-block-page']}>
                 <img src={`/img/${img}.png`} alt={name} />
                 <div className={style['cart-min-block']}>
@@ -136,6 +142,7 @@ const collectionCount = data.filter((item: dataname) => item.cotegory === 'colle
                     </div>
                 </div>
             </div>
+            </Link>
             ))
             }
             </div>
