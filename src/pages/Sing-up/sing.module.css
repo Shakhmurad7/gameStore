@@ -1,0 +1,59 @@
+.contaner-sing{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+.sing-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sing-text p{
+    font-size:1.5rem;
+    width: 100%;
+    max-width: 500px;
+}
+.sing-text h1{
+    font-size: 4rem;
+}
+.sing-input button{
+    background-color: 
+    #A259FF;
+    color: wheat;
+    font-weight: 700;
+    font-size: 20px;
+}
+.sing-input input , .sing-input button{
+    width: 70%;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+
+}
+.sing-input input{
+    font-size: 16px;
+    padding-left: 60px;
+}
+.sing-input input::placeholder{
+    color: rgb(87, 87, 87);
+    font-weight: 700;
+}
+.sing-input{
+    padding-top:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-block-1{
+    position: relative;
+}
+.BiUser , .AiOutlineMail , .RiLockPasswordLine{
+    font-size: 20px;
+    color: rgb(83, 82, 82);
+    position: absolute;
+    top: 15px;
+    left:20px;
+}

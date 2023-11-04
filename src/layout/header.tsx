@@ -14,10 +14,12 @@ function Header() {
       <div className="header-right">
         <Navbar/>
             <Link to={'/contact'}>
+            <Link to={'/SingUP'} >
           <div className="sing-up">
               <AiOutlineUser/>
               <p>Sign Up</p>
           </div>
+            </Link>
             </Link>
       </div>
    </div> 
