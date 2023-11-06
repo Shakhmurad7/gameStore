@@ -46,7 +46,7 @@ const collectionCount = data.filter((item: dataname) => item.cotegory === 'colle
         <div className={styles['filtir-page']}>
             <div className={ flter==='all'? styles['filtir-page-h2'] : styles['filtir-page-h2-none']}  onClick={()=>tab('all')} >
                 <h2>Created</h2>
-                <p>{data.length}</p>
+                <p>{data.slice(0,9).length}</p>
             </div>
             <div className={ flter==='owned'? styles['filtir-page-h2'] : styles['filtir-page-h2-none']}  onClick={()=>tab('owned')} >
                 <h2>Created</h2>

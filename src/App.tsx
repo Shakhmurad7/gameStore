@@ -4,6 +4,7 @@ import About from "./pages/About/about"
 import Connect from "./pages/Connect/connect"
 import Single from "./layout/single"
 import SingUP from "./pages/Sing-up/singUP"
+import Marketplace from "./pages/Marketplace/marketplace"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Route path="/about" element={<About/>} />
       <Route path="/connect" element={<Connect/>} />
       <Route path="/SingUP" element={<SingUP/>} />
+      <Route path="/marketplace" element={<Marketplace/>} />
       <Route path="/connect/:id" element={<Single/>} />
     </Routes>
    </>

@@ -1,0 +1,34 @@
+.container-marketplace{
+    padding: 40px 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.icon-marketplace{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.container-marketplace h1{
+    font-size: 3rem;
+}
+.container-marketplace p{
+    font-size: 20px;
+}
+.icon-marketplace input{
+    color: white;
+    border: 1px solid #3B3B3B;
+    background-color: transparent;
+    width: 100%;
+    padding: 18px;
+    outline: none;
+    border-radius: 10px;
+}
+.LiaSearchSolid{
+    font-size: 25px;
+    color: rgb(251, 245, 245);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
