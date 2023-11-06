@@ -1,3 +1,5 @@
+
+
 import PageContainer from '../../companents/pageContainer';
 import markplace from './marketplace.module.css'
 import axios from "axios"
@@ -8,40 +10,48 @@ import { LiaSearchSolid } from "react-icons/lia";
 import { Link } from 'react-router-dom';
 
 
-const url = 'https://book-db-shakhmurad.vercel.app/NFT-post-cartBlock';
 function Marketplace() {
+  
+  const [data , setdata] = useState<any>([])
+  const [flter , setflter] = useState<any>('all')
+  const [search , setsearch] = useState('')
 
-    const [data , setdata] = useState<any>([])
-    const [flter , setflter] = useState<any>('all')
-    useEffect(()=>{
-        axios.get(url).then(({data})=>{
-            setdata(data)
-        })
-    } , [])
+  const handle = (e:any)=>{
+    const {value} = e.target
+  setsearch(value)
+    console.log(search);
+  }
+  const url = `https://book-db-shakhmurad.vercel.app/NFT-post-cartBlock?q=${search}`;
 
-        type dataname ={
-            id:number,
-            item:string,
-            name:string
-            price:string
-            HighestBid:string   
-            img:string
-            cotegory:string
-        }
 
-    const tab =(i:string)=>{
-        setflter(i)
+
+  useEffect(()=>{
+    axios.get(url).then(({data})=>{
+      setdata(data)
+    })
+  } , [flter])
+  
+  type dataname ={
+    id:number,
+    item:string,
+    name:string
+    price:string
+    HighestBid:string   
+    img:string
+    cotegory:string
+  }
+  
+  const tab =(i:string)=>{
+    setflter(i)
+  }
+
+  const filterdata = data.filter((item: any) => {
+    if (flter === 'all' || item.cotegory === flter) {
+      return item.item.toLowerCase().includes(search.toLowerCase()) || item.name.toLowerCase().includes(search.toLowerCase());
     }
-
-    const filterdata = data.filter((item:any)=>{
-        if(flter === 'all'){
-            return data
-        }
-        else{
-          return item.cotegory === flter
-        }
-    
-    }) 
+    return false;
+  });
+  
 
 const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').length;
   return (
@@ -52,7 +62,12 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
             <h1>Browse Marketplace</h1>
             <p>Browse through more than 50k NFTs on the NFT Marketplace.</p>
             <div className={markplace['icon-marketplace']}>
-                <input type="text" placeholder='Search your favourite NFTs' />
+
+                <input type="text" 
+                value={search}
+                onChange={handle}
+                placeholder='Search your favourite NFTs' />
+
                 <div className={markplace['LiaSearchSolid']}><LiaSearchSolid/></div>
             </div>
         </div>
@@ -61,7 +76,7 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
         <div className={styles['filtir-page']}>
             <div className={ flter==='all'? styles['filtir-page-h2'] : styles['filtir-page-h2-none']}  onClick={()=>tab('all')} >
                 <h2>NFTs</h2>
-                <p>{data.slice(0,9).length}</p>
+                <p>{data.length}</p>
             </div>
             <div className={ flter==='owned'? styles['filtir-page-h2'] : styles['filtir-page-h2-none']}  onClick={()=>tab('owned')} >
                 <h2>Collections</h2>
@@ -200,3 +215,4 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
 }
 
 export default Marketplace
+
