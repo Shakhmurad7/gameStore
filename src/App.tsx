@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router"
 import Home from "./pages/Home/home"
-import About from "./pages/About/about"
 import Connect from "./pages/Connect/connect"
 import Single from "./layout/single"
 import SingUP from "./pages/Sing-up/singUP"

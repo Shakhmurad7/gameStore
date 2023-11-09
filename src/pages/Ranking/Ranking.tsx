@@ -1,13 +1,31 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import PageContainer from '../../companents/pageContainer'
 import style from './Ranking.module.css'
+import axios from 'axios'
 function Ranking() {
+    const url = 'https://book-db-shakhmurad.vercel.app/NFT-post-cartBlock'
     const [tab , settab] = useState('today')
+    const [data , setdata] = useState([])
+
+    type dataname ={
+        id:number,
+        item:string,
+        name:string
+        price:string
+        HighestBid:string   
+        img:string
+        cotegory:string
+      }
 
     const tabs = (i:string)=>{
         settab(i)
     }
+    useEffect(()=>{ 
+        axios.get(url).then(({data})=>{
+            setdata(data)
+        })
+    } , [])
   return (
     <PageContainer>
         <div className={style['ranking-top-text']}>
@@ -30,9 +48,34 @@ function Ranking() {
             <div className={style['ranking-right-data-text']}>
                 <p>Change</p>
                 <p>NFTs Sold</p>
-                <p>Volume</p>
+                <p className={style['p-element']} >Volume</p>
             </div>
         </div>
+
+        <div className={style['ranking-data-container']}></div>
+            {
+                data.map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                    <div key={id} className={style['renking-data-block']}>
+                        <div className={style['data-left']}>
+                             <h3>{id}</h3>
+                                <div className={style['data-img-text']}>
+                                    <img src={`./img/${img}.png`} />
+                                    <h2>{item}</h2>
+                                </div>
+                        </div>
+                        <div className={style['data-right']}>
+                            <p className={style['color-p']} >+{price} %</p>
+                            <p>{name}</p>
+                            <p>{HighestBid}</p>
+                        </div>
+
+                    </div>
+                )
+                
+                
+                )
+            }
+        
     </PageContainer>
   )
 }
