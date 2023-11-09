@@ -5,6 +5,7 @@ import Connect from "./pages/Connect/connect"
 import Single from "./layout/single"
 import SingUP from "./pages/Sing-up/singUP"
 import Marketplace from "./pages/Marketplace/marketplace"
+import Ranking from "./pages/Ranking/Ranking"
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
    <>
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/about" element={<About/>} />
+      <Route path="/Ranking" element={<Ranking/>} />
       <Route path="/connect" element={<Connect/>} />
       <Route path="/SingUP" element={<SingUP/>} />
       <Route path="/marketplace" element={<Marketplace/>} />

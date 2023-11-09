@@ -1,0 +1,13 @@
+.ranking-top-text{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 150px;
+    gap: 10px;
+    color: white;
+}
+.ranking-top-text h1{
+    font-size: 3rem;
+}
+.ranking-top-text p{
+    font-size: 1.5rem;
+}
