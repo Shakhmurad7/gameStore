@@ -11,3 +11,52 @@
 .ranking-top-text p{
     font-size: 1.5rem;
 }
+.active-tab::after{
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    content: '';
+}
+.active-tab{
+    position: relative;
+    color: white;
+}
+.ranking-container h2{
+    cursor: pointer;
+    padding: 0 40px;
+
+}
+.ranking-container{
+    padding: 40px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.none-active{
+    color:#858584;
+}
+.ranking-data-top-text{
+    margin: 30px 150px;
+    color: 
+    #858584;
+    justify-content: space-between;
+    display: flex;
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: 1px solid 
+    #3B3B3B;
+}
+.ranking-left-data-text{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.ranking-right-data-text{
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+}
