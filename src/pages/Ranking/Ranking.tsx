@@ -6,7 +6,7 @@ import axios from 'axios'
 function Ranking() {
     const url = 'https://book-db-shakhmurad.vercel.app/NFT-post-cartBlock'
     const [tab , settab] = useState('today')
-    const [data , setdata] = useState([])
+    const [data , setdata] = useState<any>([])
 
     type dataname ={
         id:number,
@@ -16,6 +16,7 @@ function Ranking() {
         HighestBid:string   
         img:string
         cotegory:string
+        day:string
       }
 
     const tabs = (i:string)=>{
@@ -26,6 +27,17 @@ function Ranking() {
             setdata(data)
         })
     } , [])
+
+
+    const filterdata = data.filter((item:any)=>{
+        if(tab === 'all'){
+            return data
+        }
+        else{
+            return item.day === tab
+        }
+    }
+     )
   return (
     <PageContainer>
         <div className={style['ranking-top-text']}>
@@ -37,7 +49,7 @@ function Ranking() {
             <h2 className={tab==='today'? style['active-tab'] : style['none-active']} onClick={()=>tabs('today')} >Today</h2>
             <h2 className={tab==='This Week'? style['active-tab'] :style['none-active']}   onClick={()=>tabs('This Week')}>This Week</h2>
             <h2 className={tab==='This Month'? style['active-tab'] : style['none-active']}   onClick={()=>tabs('This Month')}>This Month</h2>
-            <h2 className={tab==='All Time'? style['active-tab'] : style['none-active']}  onClick={()=>tabs('All Time')} >All Time</h2>
+            <h2 className={tab==='all'? style['active-tab'] : style['none-active']}  onClick={()=>tabs('all')} >All Time</h2>
         </div>
 
         <div className={style['ranking-data-top-text']}>
@@ -54,7 +66,7 @@ function Ranking() {
 
         <div className={style['ranking-data-container']}></div>
             {
-                data.map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                filterdata.map(({id, item, price, HighestBid, img, name }:dataname)=>(
                     <div key={id} className={style['renking-data-block']}>
                         <div className={style['data-left']}>
                              <h3>{id}</h3>
