@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { IoMdEye } from 'react-icons/io';
 import style from '../pages/Home/index.module.css';
+import { Link } from 'react-router-dom';
 
 function Data() {
   const [startDate] = useState(new Date("2023-12-30")); 
@@ -40,8 +41,12 @@ function Data() {
       <div className={style['aside-left']}>
         <h1>Magic Mashrooms</h1>
         <div className={style['aside-button']}>
+        <Link to={
+          '/Connect'
+        } >
           <IoMdEye />
           <p>See All</p>
+        </Link>
         </div>
       </div>
       <div className={style['aside-right']}>

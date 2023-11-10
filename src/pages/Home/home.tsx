@@ -16,10 +16,12 @@ function Home() {
           <div className={style['hero-left']}>
             <h1>Discover Digital Art & Collect NFTs</h1>
             <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
-            <div className={style['hero-icon']}>
-            <BsRocketTakeoffFill/>
-            <h5>Get Started</h5>
-            </div>
+              <Link to={'/Marketplace'}>
+              <div className={style['hero-icon']}>
+              <BsRocketTakeoffFill/>
+              <h5>Get Started</h5>
+              </div>
+            </Link>
             <div className={style['hero-page']}>
               <div className={style['hero-block']}>
                 <h2>240k+ </h2>
@@ -54,6 +56,7 @@ function Home() {
           </div>
           <div className={style['section-img']}>
 
+<Link to={"/Marketplace"}>
             <div className={style['section-img-block']}>
               <img src={'./img/Primary Photo Placeholder.png'} />
               <div className={style['setion-img-row']}>
@@ -69,6 +72,8 @@ function Home() {
                 </div>
               </div>
             </div>
+</Link>
+<Link to={"/Marketplace"}>
 
             <div className={style['section-img-block']}>
               <img src={'./img/Primary Photo Placeholder (1).png'} />
@@ -85,6 +90,9 @@ function Home() {
                 </div>
               </div>
             </div>
+</Link>
+<Link to={"/Marketplace"}>
+
 
             <div className={style['section-img-block']}>
               <img src={'./img/Primary Photo Placeholder (2).png'} />
@@ -101,6 +109,7 @@ function Home() {
                 </div>
               </div>
             </div>
+</Link>
 
           </div>
         </div>
@@ -111,10 +120,12 @@ function Home() {
       <h2>Top creators</h2>
       <p>Checkout Top Rated Creators on the NFT Marketplace</p>
     </div>
+    <Link to={"/Ranking"}>
     <div className={style['section-text-right']}>
       <BsRocketTakeoffFill/>
       <p>View Rankings</p>
     </div>
+    </Link>
   </div>
         <Carthome/>
 </div>
