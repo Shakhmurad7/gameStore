@@ -141,3 +141,51 @@ a{
     padding-top: 20px;
     border-top:1px solid#858584;
 }
+.CiMenuFries{
+    display: none;
+}
+.close{
+    display: none;
+}
+
+@media(max-width:1050px){
+    .Navbar.navbar ul{
+        transition: .4s;
+        flex-direction: column;
+        padding: 100px;
+    }
+    .Navbar.navbar{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        background-color: #3B3B3B;
+        width: 100%;
+        height: 100%;
+        transition: .4s;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0%;
+    }
+    .close{
+        cursor: pointer;
+        display: flex;
+        font-size: 20px;
+        padding-right: 60px;
+    }
+    .sing-up{
+        display: none;
+    }
+    .header-right{
+        gap: 0;
+    }
+    .Navbar.none{
+        position: absolute;
+       top: -100%;
+    }
+    .CiMenuFries{
+        cursor: pointer;
+        font-size: 20px;
+        display: flex;
+    }
+}
