@@ -19,9 +19,7 @@ function Navbar() {
         </div>
     </div>
           <div onClick={()=>setmenu(!menu)} className="CiMenuFries">
-           {
-             menu? <AiOutlineClose/> : <CiMenuFries/> 
-            }
+             <CiMenuFries/> 
           </div>
             </>
   )

@@ -487,3 +487,12 @@
     flex-direction: column;
     gap: 10px;
 }
+@media(max-width:1250px){
+  .hero-container , .section-container , .section-home-cart , .cart-container , .cart-big-container-3 {
+      padding: 40px 60px;
+    }
+    .container-messaje{
+      margin: 40px 60px;
+  }
+
+}
