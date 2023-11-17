@@ -24,6 +24,8 @@ function Footer() {
       </div>
 
      </div>
+
+     <div className="footer-left-block">
      <div className="footer-center">
         <h2>Explore</h2>
         <Link to={'/'} ><p>Marketplace</p></Link>
@@ -39,6 +41,9 @@ function Footer() {
         <button>Subscribe</button>
       </div>
      </div>
+
+     </div>
+     
   </div>
 
   <div className="footer-end">

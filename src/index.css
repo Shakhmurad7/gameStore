@@ -147,6 +147,19 @@ a{
 .close{
     display: none;
 }
+.footer-left-block{
+    display: flex;
+    gap: 40px;
+}
+@media(max-width:1150px){
+    .footer-contaiiner{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-left-block{
+        gap: 100px;
+    }
+}
 @media(max-width:1050px){
     .Navbar.navbar ul{
         transition: .4s;
