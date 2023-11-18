@@ -26,6 +26,7 @@ function CartImg() {
 
         {
             data.slice(0,2).map(({id , img , icon , item}:dataname)=>(
+                <div  key={id} className="">
                 <Link to={'/Marketplace'} >
                 <div key={id}  className={style['content-block']}>
                     <img className={style['section-image']} src={`./img/${img}.png`} />
@@ -33,6 +34,7 @@ function CartImg() {
                     <img className={style['icon-img']} src={`./img/${icon}.svg`}  />
                 </div>
                 </Link>
+                </div>
             ))
             
         }
@@ -41,14 +43,15 @@ function CartImg() {
         <div className={style['content-big-container']}>
 {
     data.slice(2,4).map(({id , img , icon , item}:dataname)=>(
+        <div  key={id} className="">
         <Link to={'/Marketplace'} >
-        
         <div key={id}  className={style['content-block']}>
             <img className={style['section-image']} src={`./img/${img}.png`} />
             <h2>{item}</h2>
             <img className={style['icon-img']} src={`./img/${icon}.svg`}  />
         </div>
         </Link>
+        </div>
     ))
     
 }
@@ -62,14 +65,15 @@ function CartImg() {
         <div className={style['content-big-container']}>
 {
     data.slice(4,6).map(({id , img , icon , item}:dataname)=>(
-        <Link to={'/Marketplace'} >
-        
-        <div key={id}  className={style['content-block']}>
-            <img className={style['section-image']} src={`./img/${img}.png`} />
-            <h2>{item}</h2>
-            <img className={style['icon-img']} src={`./img/${icon}.svg`}  />
-        </div>
-        </Link>
+        <div  key={id} className="">
+                <Link to={'/Marketplace'} >
+                <div key={id}  className={style['content-block']}>
+                    <img className={style['section-image']} src={`./img/${img}.png`} />
+                    <h2>{item}</h2>
+                    <img className={style['icon-img']} src={`./img/${icon}.svg`}  />
+                </div>
+                </Link>
+                </div>
     ))
     
 }
@@ -77,14 +81,15 @@ function CartImg() {
         <div className={style['content-big-container']}>
 {
     data.slice(6,8).map(({id , img , icon , item}:dataname)=>(
+        <div  key={id} className="">
         <Link to={'/Marketplace'} >
-        
         <div key={id}  className={style['content-block']}>
             <img className={style['section-image']} src={`./img/${img}.png`} />
             <h2>{item}</h2>
             <img className={style['icon-img']} src={`./img/${icon}.svg`}  />
         </div>
         </Link>
+        </div>
     ))
     
 }
