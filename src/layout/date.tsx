@@ -52,6 +52,9 @@ function Data() {
       <div className={style['aside-right']}>
         <h3>Auction ends in:</h3>
         <div className={style['aside-date']}>
+
+          <div className={style['day-hours-block']}>
+
           <div className={style['aside-page-date']}>
             <h2>{days}</h2>
             <h4>day</h4>
@@ -63,9 +66,14 @@ function Data() {
             <h2>{hours}</h2>
             <h4>Hours</h4>
           </div>
+          </div>
+
           <div className={style['aside-item']}>
             <h2>:</h2>
           </div>
+
+          <div className={style['minut-secund']}>
+
           <div className={style['aside-page-date']}>
             <h2>{minutes}</h2>
             <h4>Minutes</h4>
@@ -77,6 +85,8 @@ function Data() {
             <h2>{seconds}</h2>
             <h4>seconds</h4>
           </div>
+          </div>
+
         </div>
       </div>
     </div>

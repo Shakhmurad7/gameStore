@@ -152,7 +152,6 @@ function Home() {
     <CartBlock/>
 </div>
 {/* ----Date---- */}
-
 <Data/>
 
 {/* ----Cart-3----- */}
