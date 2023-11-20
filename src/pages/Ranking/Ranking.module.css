@@ -102,3 +102,14 @@
     display: flex;
     gap: 30px;
 }
+@media(max-width:1150px){
+    .ranking-top-text{
+        padding: 40px ;
+    }
+    .ranking-container{
+        padding: 40px;
+    }
+    .ranking-data-top-text , .renking-data-block{
+        margin: 30px 40px;
+    }
+}
