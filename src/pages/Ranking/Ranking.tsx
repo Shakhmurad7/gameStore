@@ -46,10 +46,14 @@ function Ranking() {
         </div>
 
         <div className={style['ranking-container']}>
-            <h2 className={tab==='today'? style['active-tab'] : style['none-active']} onClick={()=>tabs('today')} >Today</h2>
-            <h2 className={tab==='This Week'? style['active-tab'] :style['none-active']}   onClick={()=>tabs('This Week')}>This Week</h2>
-            <h2 className={tab==='This Month'? style['active-tab'] : style['none-active']}   onClick={()=>tabs('This Month')}>This Month</h2>
-            <h2 className={tab==='all'? style['active-tab'] : style['none-active']}  onClick={()=>tabs('all')} >All Time</h2>
+            <div className={style['ranking-container-block-top']}>
+                <h2 className={tab==='today'? style['active-tab'] : style['none-active']} onClick={()=>tabs('today')} >Today</h2>
+                <h2 className={tab==='This Week'? style['active-tab'] :style['none-active']}   onClick={()=>tabs('This Week')}>This Week</h2>
+            </div>
+            <div className={style['ranking-container-block-top']}>
+                <h2 className={tab==='This Month'? style['active-tab'] : style['none-active']}   onClick={()=>tabs('This Month')}>This Month</h2>
+                <h2 className={tab==='all'? style['active-tab'] : style['none-active']}  onClick={()=>tabs('all')} >All Time</h2>
+            </div>
         </div>
 
         <div className={style['ranking-data-top-text']}>

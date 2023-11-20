@@ -206,6 +206,9 @@ a{
     }
 }
 @media(max-width:650px){
+    .Navbar.navbar ul{
+        padding: 50px;
+    }
     .footer-left-block {
         flex-direction: column;
         gap: 40px;
@@ -216,6 +219,12 @@ a{
     }
 }
 @media(max-width:400px){
+    .Header-container{
+        padding: 20px;
+    }
+    .header-left h2{
+        font-size: 19px;
+    }
     .footer-input{
         flex-direction: column;
     }

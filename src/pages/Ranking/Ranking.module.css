@@ -30,14 +30,15 @@
 
 }
 .ranking-container{
+    gap: 10%;
     padding: 40px 150px;
     display: flex;
-    justify-content: space-between;
 }
 .none-active{
     color:#858584;
 }
 .ranking-data-top-text{
+    gap: 100px;
     margin: 30px 150px;
     color: 
     #858584;
@@ -102,6 +103,13 @@
     display: flex;
     gap: 30px;
 }
+
+.ranking-container-block-top{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
 @media(max-width:1150px){
     .ranking-top-text{
         padding: 40px ;
@@ -112,4 +120,72 @@
     .ranking-data-top-text , .renking-data-block{
         margin: 30px 40px;
     }
+}
+@media(max-width:900px){
+    .ranking-container{
+        gap:0px
+    }
+    .renking-data-block , .ranking-data-top-text{
+        padding: 10px;
+    }
+    .data-left h2{
+        font-size: 15px;
+    }
+    .ranking-data-top-text , .renking-data-block{
+        margin: 30px 10px;
+    }
+}
+@media(max-width:900px){
+    .ranking-container{
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .data-img-text img{
+        display: none;
+    }
+}
+
+
+@media(max-width:700px){
+    .ranking-top-text h1{
+        font-size: 2rem;
+
+    }
+    .ranking-data-top-text{
+        gap: 50px;
+    }
+    .data-img-text{
+        padding-right: 10px;
+    }
+    .data-left h2{
+        font-size: 11px;
+    }
+}
+@media(max-width:450px){
+
+.ranking-container-block-top{
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+.ranking-data-top-text{
+    gap: 20px;
+}
+.renking-data-block {
+    font-size: 14px;
+}
+.ranking-right-data-text , .ranking-left-data-text{
+    font-size: 12px;
+}
+.data-right{
+    font-size: 11px;
+}
+.data-left{
+    gap: 7px;
+}
+.ranking-left-data-text{
+    gap: 7px;
+}
 }
