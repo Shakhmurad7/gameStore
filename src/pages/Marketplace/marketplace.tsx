@@ -94,6 +94,7 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
 
             {
                 filterdata.slice(0,3).map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                    <div key={id} className="">
                     <Link to={`/connect/${id}`}>
                     <div key={id} className={styles['cart-block-page']}>
                 <img src={`/img/${img}.png`} alt={name} />
@@ -116,6 +117,7 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
                 </div>
             </div>
                 </Link>
+                    </div>
             ))
         }
         </div>
@@ -123,6 +125,8 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
         <div className={ style['section-cart-block']}>
                {
             filterdata.slice(3,6).map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                <div key={id} className="">
+
                 <Link to={`/connect/${id}`}>
                 <div key={id} className={styles['cart-block-page']}>
                 <img src={`/img/${img}.png`} alt={name} />
@@ -145,12 +149,15 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
                 </div>
             </div>
             </Link>
+                </div>
             ))
             }
             </div>
             <div className={ style['section-cart-block']}>
                {
                    filterdata.slice(6,9).map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                    <div key={id} className="">
+
                 <Link to={`/connect/${id}`}>
                 <div key={id} className={styles['cart-block-page']}>
                 <img src={`/img/${img}.png`} alt={name} />
@@ -173,6 +180,7 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
                 </div>
             </div>
             </Link>
+                    </div>
             ))
             }
             
@@ -181,6 +189,8 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
             <div className={ style['section-cart-block']}>
                {
                    filterdata.slice(9,12).map(({id, item, price, HighestBid, img, name }:dataname)=>(
+                    <div key={id} className="">
+
                 <Link to={`/connect/${id}`}>
                 <div key={id} className={styles['cart-block-page']}>
                 <img src={`/img/${img}.png`} alt={name} />
@@ -203,6 +213,7 @@ const ownedCount = data.filter((item: dataname) => item.cotegory === 'owned').le
                 </div>
             </div>
             </Link>
+                    </div>
             ))
             }
             
