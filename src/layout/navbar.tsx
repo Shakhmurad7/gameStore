@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
 import { CiMenuFries } from "react-icons/ci";
+import { NavLink } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 
 function Navbar() {
@@ -9,10 +9,10 @@ function Navbar() {
     <>
     <div className={`Navbar ${menu? `navbar` : `none` }`}>
         <ul>
-            <Link to={'/'}>Home</Link>
-            <Link to={'/Marketplace'}>Marketplace</Link>
-            <Link to={'/ranking'}>Rankings</Link>
-            <Link to={'/connect'}>Connect a wallet</Link>
+            <NavLink to={'/'}>Home</NavLink>
+            <NavLink to={'/Marketplace'}>Marketplace</NavLink>
+            <NavLink to={'/ranking'}>Rankings</NavLink>
+            <NavLink to={'/connect'}>Connect a wallet</NavLink>
         </ul>
         <div onClick={()=>setmenu(false)} className="close">
             <AiOutlineClose/> 
