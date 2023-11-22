@@ -32,3 +32,17 @@
     right: 20px;
     top: 15px;
 }
+@media(max-width:1000px){
+    .container-marketplace{
+        padding: 40px;
+    }
+}
+@media(max-width:500px){
+    .container-marketplace h1{
+        font-size: 2.5rem;
+    }
+    .container-marketplace{
+        padding: 40px 20px;
+    }
+    
+}
