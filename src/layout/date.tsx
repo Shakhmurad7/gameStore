@@ -4,7 +4,7 @@ import style from '../pages/Home/index.module.css';
 import { Link } from 'react-router-dom';
 
 function Data() {
-  const [startDate] = useState(new Date("2023-12-30")); 
+  const [startDate] = useState(new Date("2024-6-30")); 
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
