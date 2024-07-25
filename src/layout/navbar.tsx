@@ -13,6 +13,9 @@ function Navbar() {
             <NavLink to={'/Marketplace'}>Marketplace</NavLink>
             <NavLink to={'/ranking'}>Rankings</NavLink>
             <NavLink to={'/connect'}>Connect a wallet</NavLink>
+            <div className="singup-none">
+              <NavLink to={'/SingUP'}>SingUP</NavLink>
+            </div>
         </ul>
         <div onClick={()=>setmenu(false)} className="close">
             <AiOutlineClose/> 

@@ -154,6 +154,10 @@ a.active{
     display: flex;
     gap: 40px;
 }
+
+.singup-none{
+    display: none;
+}
 @media(max-width:1150px){
     .footer-big-container{
         padding: 20px 40px;
@@ -167,6 +171,9 @@ a.active{
     }
 }
 @media(max-width:1050px){
+    .singup-none{
+        display: flex;
+    }
     .Navbar.navbar ul{
         transition: .4s;
         flex-direction: column;
